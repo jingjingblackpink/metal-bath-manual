@@ -2,122 +2,26 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-<title>金属浴加热制冷仪器使用说明</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>金属浴加热制冷仪器使用说明书</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"PingFang SC","Microsoft YaHei",sans-serif;color:#333;background:#f5f5f5;line-height:1.8;padding:0}
-.header{text-align:center;background:linear-gradient(135deg,#1e88e5,#1565c0);color:#fff;padding:30px 20px 20px}
-.header h1{font-size:22px;font-weight:600;margin-bottom:8px}
-.header p{font-size:13px;opacity:.85}
-.section{background:#fff;margin:12px;border-radius:10px;padding:16px 18px;box-shadow:0 1px 4px rgba(0,0,0,.08)}
-.section h2{font-size:17px;color:#1565c0;border-left:4px solid #1565c0;padding-left:10px;margin-bottom:12px}
-.section p,.section li{font-size:14px;color:#444;margin-bottom:4px}
-.section ol,.section ul{padding-left:20px}
-.section ol li,.section ul li{margin-bottom:4px}
-.tag{display:inline-block;background:#e3f2fd;color:#1565c0;font-size:12px;padding:2px 8px;border-radius:4px;margin:2px 4px 2px 0}
-.warning{background:#fff3e0;border-left:4px solid #f57c00;margin:12px;border-radius:10px;padding:16px 18px;box-shadow:0 1px 4px rgba(0,0,0,.08)}
-.warning h2{font-size:17px;color:#e65100;border-left:4px solid #f57c00;padding-left:10px;margin-bottom:12px}
-.warning p{font-size:14px;color:#bf360c;font-weight:600;margin-bottom:6px}
-.footer{text-align:center;color:#999;font-size:11px;padding:16px 12px 30px}
-table{width:100%;border-collapse:collapse;font-size:13px;margin:8px 0}
-th{background:#e3f2fd;color:#1565c0;text-align:left;padding:8px;font-weight:600}
-td{padding:8px;border-bottom:1px solid #eee}
-tr:last-child td{border-bottom:none}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:#f5f5f5;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;min-height:100vh;padding:40px 20px}
+.container{text-align:center;max-width:400px}
+h1{color:#1565c0;font-size:22px;margin-bottom:30px;line-height:1.5}
+.btn{display:inline-block;background:#1565c0;color:#fff;text-decoration:none;padding:16px 40px;border-radius:8px;font-size:18px;font-weight:600;margin:10px 0;transition:background .2s}
+.btn:hover{background:#0d47a1}
+.btn secondary{background:#e3f2fd;color:#1565c0}
+p{color:#666;font-size:14px;margin-top:20px;line-height:1.8}
 </style>
 </head>
 <body>
-
-<div class="header">
+<div class="container">
 <h1>金属浴加热制冷仪器<br>使用说明书</h1>
-<p>上海泉心品生物科技有限公司</p>
+<a class="btn" href="manual.pdf">点击查看完整说明书（PDF）</a>
+<br>
+<a class="btn secondary" href="https://jingjingblackpink.github.io/metal-bath-manual/mobile.html" style="background:#e3f2fd;color:#1565c0">查看精简版说明（网页）</a>
+<p>上海泉心品生物科技有限公司<br>MCU版本：V3.2.2 | 串口屏版本：V6.6.2</p>
 </div>
-
-<div class="section">
-<h2>一、手动模式操作</h2>
-<ol>
-<li>在手动设置页面设定目标温度（4~100°C）和保温时间</li>
-<li>选择速率模式（基础/高速/极限）</li>
-<li>点击"运行"开始控温</li>
-<li>到达设定温度后自动开始保温倒计时，倒计时结束蜂鸣提示并自动停止</li>
-<li>运行中可随时点击"暂停"或"停止"</li>
-</ol>
-</div>
-
-<div class="section">
-<h2>二、程控模式操作</h2>
-<ol>
-<li>在程序编辑页面编辑程序（最多5个程序，每个最多3步）</li>
-<li>在程序控制页面选择程序并点击"运行"</li>
-<li>每个步骤自动执行，全部完成蜂鸣提示自动停止</li>
-</ol>
-</div>
-
-<div class="section">
-<h2>三、恢复室温</h2>
-<p>点击"恢复室温"按钮，设备自动控温至23°C后停止。适用于实验结束后安全取出样品。</p>
-<p>运行中点击"停止"可中断，停止后风扇继续工作10秒。</p>
-</div>
-
-<div class="section">
-<h2>四、常用功能</h2>
-<table>
-<tr><th>功能</th><th>说明</th></tr>
-<tr><td>低温保存</td><td>运行结束后自动保持低温，保护样品</td></tr>
-<tr><td>开机预设</td><td>上电自动预热/预冷到设定温度</td></tr>
-<tr><td>热盖模式</td><td>控制热盖温度，防止冷凝水</td></tr>
-<tr><td>常用温度</td><td>4个快捷按钮一键设定目标温度</td></tr>
-<tr><td>运行曲线</td><td>实时显示温度曲线，最多记录7天数据</td></tr>
-<tr><td>数据导出</td><td>通过U盘导出运行日志数据</td></tr>
-</table>
-</div>
-
-<div class="section">
-<h2>五、速率模式</h2>
-<table>
-<tr><th>模式</th><th>升温速率</th><th>降温速率</th><th>适用场景</th></tr>
-<tr><td>基础模式</td><td>约3°C/min</td><td>约2°C/min</td><td>对速率要求不高</td></tr>
-<tr><td>高速模式</td><td>约5°C/min</td><td>约3°C/min</td><td>快速到达目标温度</td></tr>
-<tr><td>极限模式</td><td colspan="2">不限制，以最快速度到达</td><td>极限升降温需求</td></tr>
-</table>
-</div>
-
-<div class="section">
-<h2>六、报警类型</h2>
-<div>
-<span class="tag">温度传感器故障</span>
-<span class="tag">温度异常</span>
-<span class="tag">升降温异常</span>
-<span class="tag">模块未正确安装</span>
-<span class="tag">通信故障</span>
-<span class="tag">存储器故障</span>
-</div>
-<p style="margin-top:8px;font-size:13px;color:#666">设备运行中如出现异常，会自动停止并在报警页面显示信息。</p>
-</div>
-
-<div class="section">
-<h2>七、技术参数</h2>
-<table>
-<tr><th>参数</th><th>规格</th></tr>
-<tr><td>温度范围</td><td>4~100°C</td></tr>
-<tr><td>控温精度</td><td>±0.5°C</td></tr>
-<tr><td>最大保温时间</td><td>99:59:59</td></tr>
-<tr><td>程序数量</td><td>5个，每程序最多3步</td></tr>
-<tr><td>断电续跑</td><td>支持，重新上电自动从断点继续</td></tr>
-<tr><td>掉电保存</td><td>设置参数与程序断电不丢失</td></tr>
-</table>
-</div>
-
-<div class="warning">
-<h2>⚠️ 温馨提示</h2>
-<p>1. 关闭仪器前，请先停止设备运行，等待仪器温度恢复至室温后，再关闭电源开关。</p>
-<p>2. 切勿在关闭电源后立即重新开机，不当操作将影响仪器的使用寿命。</p>
-</div>
-
-<div class="footer">
-<p>MCU版本：V3.2.2 | 串口屏版本：V6.6.2</p>
-<p>上海泉心品生物科技有限公司</p>
-</div>
-
 </body>
 </html>
