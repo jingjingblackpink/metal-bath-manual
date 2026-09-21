@@ -125,16 +125,35 @@
 
 ---
 
+## 修改六：中英文子页面页脚添加公司名称
+
+**提交：`02f5aef` docs: 中英文子页面页脚添加公司名称**
+
+| 文件 | 修改内容 |
+|------|----------|
+| `intro.html` | 页脚新增第三行「**上海泉心品生物科技有限公司**」 |
+| `manuals.html` | 页脚新增第三行「**上海泉心品生物科技有限公司**」 |
+| `intro_en.html` | 页脚新增第三行「**Shanghai Quanxinpin Biotechnology Co., Ltd.**」 |
+| `manual_en.html` | 页脚新增第三行「**Shanghai Quanxinpin Biotechnology Co., Ltd.**」 |
+
+### 说明
+
+- 至此全部 **6 个页面**页脚均含公司名称（中文页：上海泉心品生物科技有限公司；英文页：Shanghai Quanxinpin Biotechnology Co., Ltd.）。
+- 仅页脚各新增一行，其余内容、`style.css`、PDF、二维码均未改动；CSS 无改动故 `?v=20260921` 保持不变。
+- **二维码图片未做任何改动**，扫码指向地址不变，无需重新印刷。
+
+---
+
 ## 线上验证（2026-09-21）
 
 | 页面 | 网址 | 验证结果 |
 |------|------|----------|
 | 英文首页 | https://jingjingblackpink.github.io/metal-bath-manual/index_en.html | ✓ 200 OK，全部英文文案生效，「中文 · Chinese」切换按钮正常，页脚公司名称「Shanghai Quanxinpin Biotechnology Co., Ltd.」已生效 |
-| 英文简介页 | https://jingjingblackpink.github.io/metal-bath-manual/intro_en.html | ✓ 200 OK，全部英文文案生效，参数表数据一致 |
-| 英文说明书页 | https://jingjingblackpink.github.io/metal-bath-manual/manual_en.html | ✓ 200 OK，全部英文文案生效，PDF 链接不变（1.94 / 1.97 MB 文案正确） |
+| 英文简介页 | https://jingjingblackpink.github.io/metal-bath-manual/intro_en.html | ✓ 200 OK，全部英文文案生效，参数表数据一致，页脚公司名称已生效 |
+| 英文说明书页 | https://jingjingblackpink.github.io/metal-bath-manual/manual_en.html | ✓ 200 OK，全部英文文案生效，PDF 链接不变（1.94 / 1.97 MB 文案正确），页脚公司名称已生效 |
 | 中文首页 | https://jingjingblackpink.github.io/metal-bath-manual/ | ✓ 200 OK，左上角已显示「EN · English」按钮，页脚公司名称「上海泉心品生物科技有限公司」已生效，其余内容无改动 |
-| 中文简介页 | https://jingjingblackpink.github.io/metal-bath-manual/intro.html | ✓ 200 OK，CSS 引用已升级 v=20260921，无旧参数残留 |
-| 中文说明书页 | https://jingjingblackpink.github.io/metal-bath-manual/manuals.html | ✓ 200 OK，CSS 引用已升级 v=20260921，无旧参数残留 |
+| 中文简介页 | https://jingjingblackpink.github.io/metal-bath-manual/intro.html | ✓ 200 OK，CSS 引用已升级 v=20260921，无旧参数残留，页脚公司名称已生效 |
+| 中文说明书页 | https://jingjingblackpink.github.io/metal-bath-manual/manuals.html | ✓ 200 OK，CSS 引用已升级 v=20260921，无旧参数残留，页脚公司名称已生效 |
 | style.css | https://jingjingblackpink.github.io/metal-bath-manual/style.css | ✓ 200 OK，已含 `.lang-switch` 新样式 |
 
 > 注：GitHub Pages CDN 缓存最长 10 分钟（`Cache-Control: max-age=600`），推送后个别页面若短暂显示旧内容，刷新或等待几分钟即可。
@@ -157,12 +176,14 @@
 | 品牌名 | 中文版：B5 MAX 金属浴 · 加热制冷；英文版：B5 MAX Metal Bath · Heating & Cooling |
 | 版本标识 | 中文首页：说明书版本V1.0 · 时间：2026年9月10日；英文首页：Manual Version: V1.0 · Date: September 10, 2026（均在右上角） |
 | 语言切换 | 两个首页左上角：中文页「EN · English」⇄ 英文页「中文 · Chinese」 |
-| 公司名称 | 中文首页页脚：上海泉心品生物科技有限公司；英文首页页脚：Shanghai Quanxinpin Biotechnology Co., Ltd.（仅两个首页，子页面页脚未加） |
+| 公司名称 | 全部 6 个页面页脚第三行：中文页（index / intro / manuals）上海泉心品生物科技有限公司；英文页（index_en / intro_en / manual_en）Shanghai Quanxinpin Biotechnology Co., Ltd. |
 | CSS 版本 | `style.css?v=20260921`（全部 6 个 HTML 页面统一引用） |
 
 ### 本次提交历史（含此前会话）
 
 ```
+02f5aef  docs: 中英文子页面页脚添加公司名称
+d5fca0a  docs: 20260921修改记录提交历史补充文档入库提交号
 aa64570  docs: 新增20260921修改记录文档至仓库
 07ec7ef  docs: 修改记录补充中英文首页页脚公司名称
 cefee82  docs: 中英文首页页脚添加公司名称

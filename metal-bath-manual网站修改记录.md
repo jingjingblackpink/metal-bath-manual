@@ -311,3 +311,18 @@ URL 变化 = 缓存必失效，所有缓存过旧 CSS 的设备（含已扫码�
 - 仅改动两个首页（`index.html` / `index_en.html`）的页脚，其余页面（intro / manuals / intro_en / manual_en）、`style.css`、PDF、二维码均未改动
 - `style.css` 本次无改动，CSS 引用版本号保持 `?v=20260921` 不变，无缓存风险
 - 线上验证（2026-09-21）：两个首页页脚公司名称均已生效（中文页含「上海泉心品生物科技有限公司」、英文页含「Shanghai Quanxinpin Biotechnology Co., Ltd.」）
+
+### 10.7 同日补充：中英文子页面页脚添加公司名称
+
+**Commit：`02f5aef`（docs: 中英文子页面页脚添加公司名称）**
+
+| 文件 | 修改内容 |
+|------|----------|
+| `intro.html` | 页脚新增第三行「**上海泉心品生物科技有限公司**」 |
+| `manuals.html` | 页脚新增第三行「**上海泉心品生物科技有限公司**」 |
+| `intro_en.html` | 页脚新增第三行「**Shanghai Quanxinpin Biotechnology Co., Ltd.**」 |
+| `manual_en.html` | 页脚新增第三行「**Shanghai Quanxinpin Biotechnology Co., Ltd.**」 |
+
+- 至此全部 **6 个页面**页脚均含公司名称（中文页：上海泉心品生物科技有限公司；英文页：Shanghai Quanxinpin Biotechnology Co., Ltd.）
+- 仅页脚新增一行，其余内容、`style.css`、PDF、二维码均未改动；CSS 无改动故 `?v=20260921` 保持不变
+- 线上验证（2026-09-21）：四个子页公司名称均已生效
