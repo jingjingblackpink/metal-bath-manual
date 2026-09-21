@@ -298,3 +298,16 @@ URL 变化 = 缓存必失效，所有缓存过旧 CSS 的设备（含已扫码�
 | style.css?v=20260921 | https://jingjingblackpink.github.io/metal-bath-manual/style.css | ✅ 含 .lang-switch 新样式 |
 
 > 注：GitHub Pages CDN 缓存最长 10 分钟（`Cache-Control: max-age=600`），推送后个别页面若短暂显示旧内容，刷新或等待几分钟即可。
+
+### 10.6 同日补充：中英文首页页脚添加公司名称
+
+**Commit：`cefee82`（docs: 中英文首页页脚添加公司名称）**
+
+| 文件 | 修改内容 |
+|------|----------|
+| `index.html` | 页脚新增第三行「**上海泉心品生物科技有限公司**」（位于「扫描二维码 · 随时查阅产品说明书」下方） |
+| `index_en.html` | 页脚新增第三行「**Shanghai Quanxinpin Biotechnology Co., Ltd.**」（位于「Scan the QR code · Access the product manual anytime」下方） |
+
+- 仅改动两个首页（`index.html` / `index_en.html`）的页脚，其余页面（intro / manuals / intro_en / manual_en）、`style.css`、PDF、二维码均未改动
+- `style.css` 本次无改动，CSS 引用版本号保持 `?v=20260921` 不变，无缓存风险
+- 线上验证（2026-09-21）：两个首页页脚公司名称均已生效（中文页含「上海泉心品生物科技有限公司」、英文页含「Shanghai Quanxinpin Biotechnology Co., Ltd.」）
