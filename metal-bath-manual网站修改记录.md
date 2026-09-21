@@ -212,3 +212,89 @@ URL 变化 = 缓存必失效，所有缓存过旧 CSS 的设备（含已扫码�
 - 下载页新大小文案（1.94 / 1.97 MB）已生效，旧文案（1.85 / 1.87 MB）不存在
 - 首页新日期戳「2026年9月10日」已生效，旧日期「2026年9月9日」不存在
 - 二维码 `46二维码.bmp` 与仓库内 `B5_MAX金属浴_首页.bmp` 及其指向链接全程未改动
+
+---
+
+## 十、2026年9月21日会话：新增英文版页面并添加中英文切换按钮
+
+> 参考本地《爱津_修改记录_20260921.md》与 `爱津涡旋仪\` 项目（aijin_Manual 站点）的双语化做法。
+
+### 10.1 新增三个英文版页面
+
+新建 `index_en.html`、`intro_en.html`、`manual_en.html`，风格与中文版（`index.html` / `intro.html` / `manuals.html`）完全一致，共用同一份 `style.css`，仅将中文文案替换为英文，页面内链接均指向英文版页面。
+
+**① 英文首页 `index_en.html`**
+
+| 位置 | 中文版（原文） | 英文版（本次新增） |
+|------|------|------|
+| 页面标题 | B5 MAX 金属浴 · 产品手册 | **B5 MAX Metal Bath · Product Manual** |
+| 顶部大标题 | B5 MAX 金属浴（h1，26px） | **B5 MAX Metal Bath**（h1，内联 22px，与爱津英文首页做法一致） |
+| 副标题 | 智能金属浴加热制冷仪器 · B5 MAX | **Smart Heating & Cooling Metal Bath · B5 MAX** |
+| 欢迎语 | 欢迎扫码访问，请选择： | **Welcome! Please scan the QR code to access the following options:** |
+| 按钮一 | 产品简介 / 了解产品特点与参数 | **Product Introduction / Learn about the product features and specifications** |
+| 按钮二 | 产品说明书下载 / 中文版 / 英文版 在线预览与下载 | **Product Manual Download / Online preview and download of the Chinese / English versions** |
+| 页脚 | B5 MAX 金属浴 · 加热制冷 / 扫描二维码 · 随时查阅产品说明书 | **B5 MAX Metal Bath · Heating & Cooling / Scan the QR code · Access the product manual anytime** |
+| 右上角版本标识 | 说明书版本V1.0 / 时间：2026年9月10日 | **Manual Version: V1.0 / Date: September 10, 2026** |
+| 页面内链接 | intro.html / manuals.html | 指向 **intro_en.html / manual_en.html** |
+
+**② 英文简介页 `intro_en.html`**
+
+| 位置 | 中文版（原文） | 英文版（本次新增） |
+|------|------|------|
+| 页面标题 | 产品简介 · B5 MAX 金属浴 | **Product Introduction · B5 MAX Metal Bath** |
+| 返回栏 | ‹ 返回首页 / 产品简介 | **‹ Back to Home / Product Introduction** |
+| 卡片一标题 | B5 MAX 智能金属浴（加热制冷型） | **B5 MAX Smart Metal Bath (Heating & Cooling)** |
+| 产品描述 | B5 MAX —— 面向实验室的高精度加热制冷金属浴，采用双闭环级联 PID 温控与模块化设计，为分子生物学实验提供稳定可靠的温度环境。 | **B5 MAX — a high-precision heating & cooling metal bath for laboratories. It features dual closed-loop cascade PID temperature control and a modular design, providing a stable and reliable temperature environment for molecular biology experiments.** |
+| 特性 1~6 | 双闭环级联 PID…/ 加热制冷一体…/ 三档升降温速率…/ 7 寸 DGUS…/ 50 组程控程序…/ 运行曲线实时显示… | **Dual closed-loop cascade PID temperature control with ±0.1°C accuracy / Integrated heating and cooling, temperature range 4~100°C / Three selectable heating/cooling rate modes (Basic / High-speed / Ultimate) / 7-inch DGUS serial touch screen, intuitive and easy to operate / 50 programmable groups (up to 10 steps each), retained after power failure / Real-time running curve with up to 12,800 data points, USB data export supported** |
+| 卡片二 | 技术参数（10 行参数表） | **Technical Specifications**（Temperature Range / Accuracy / Uniformity / Heating Rate / Cooling Rate / Timer Range / Program Capacity / Display / Input Power / Dimensions，数据与中文版完全一致） |
+| 卡片三 | 查看完整说明书 / 如需查看详细操作说明，请下载中英文版产品说明书。 | **View the Complete Manual / For detailed operating instructions, please download the product manual.** |
+| 页脚 | 同中文版 | 同英文首页（B5 MAX Metal Bath · Heating & Cooling） |
+| 页面内链接 | index.html / manuals.html | 指向 **index_en.html / manual_en.html** |
+
+**③ 英文说明书页 `manual_en.html`**
+
+| 位置 | 中文版（原文） | 英文版（本次新增） |
+|------|------|------|
+| 页面标题 | 产品说明书下载 · B5 MAX 金属浴 | **Product Manual Download · B5 MAX Metal Bath** |
+| 返回栏 | ‹ 返回首页 / 产品说明书 | **‹ Back to Home / Product Manual** |
+| 卡片一角标 | 中 | **ZH**（英文页面不出现中文字符） |
+| 卡片一标题 | 中文版产品说明书 | **Chinese Product Manual** |
+| 卡片一副标题 | B5 MAX 智能金属浴使用说明书（中文）· PDF 1.94 MB | **B5 MAX Smart Metal Bath User Manual (Chinese) · PDF 1.94 MB** |
+| 卡片一按钮 | 在线预览 / 下载 PDF | **Preview Online / Download PDF**（仍指向 B5_MAX_Metal_Bath_Manual_zh.pdf） |
+| 卡片二标题 | 英文版产品说明书 | **English Product Manual** |
+| 卡片二副标题 | B5 MAX Intelligent Metal Bath User Manual · PDF 1.97 MB | 保持不变 |
+| 卡片二按钮 | 在线预览 / 下载 PDF | **Preview Online / Download PDF**（仍指向 B5_MAX_Metal_Bath_Manual_en.pdf） |
+| 提示行 | 提示：点击「在线预览」可在浏览器中直接查看；点击「下载 PDF」可保存到本地。 | **Note: Click 「Preview Online」 to view the manual directly in your browser. Click 「Download PDF」 to save it to your device.**（引号沿用「」风格，与爱津优化后一致） |
+| 页脚 | 同中文版 | 同英文首页 |
+| 页面内链接 | index.html | 指向 **index_en.html** |
+
+### 10.2 中文首页左上角添加中英文切换按钮
+
+| 文件 | 修改内容 |
+|------|----------|
+| `index.html` | 左上角新增「**EN · English**」按钮，点击跳转英文首页 `index_en.html`（原有内容除该按钮与 CSS 引用版本号外均未改动） |
+| `index_en.html` | 左上角对应「**中文 · Chinese**」按钮，点击切回中文首页 `index.html` |
+| `style.css` | 新增 `.lang-switch` 样式（固定于页面左上角，半透明白底圆角小标签，与右上角版本标识风格呼应，不遮挡顶部内容；与爱津站点同款） |
+
+### 10.3 CSS 版本号同步升级（缓存约定）
+
+本次 `style.css` 有改动（新增 `.lang-switch`），按第四节日约定，全部 6 个 HTML 页面的 CSS 引用统一由 `style.css?v=20260908` 升级为 **`style.css?v=20260921`**（含未改版式的 `intro.html` / `manuals.html`），确保缓存了旧 CSS 的设备自动拉取新样式，语言按钮正常显示。
+
+### 10.4 未改动项
+
+- **二维码图片及其指向链接全程未改动**（`46二维码.bmp` 及仓库内 `B5_MAX二维码_首页.bmp`），扫码仍直达中文首页，无需重新印刷
+- PDF 文件（20260910 版）及站点文件名均未改动，英文页 PDF 链接与中文版共用同一对文件
+- 中文版三个页面除新增按钮与 CSS 版本号外，文案、结构、数据均未改动，中文版仍是扫码默认打开的状态
+- 切换按钮位于两个首页（`index.html` / `index_en.html`）；英文版子页面通过「Back to Home」返回英文首页后再切换
+
+### 10.5 线上验证（2026-09-21）
+
+| 页面 | 网址 | 验证结果 |
+|------|------|----------|
+| 英文首页 | https://jingjingblackpink.github.io/metal-bath-manual/index_en.html | ✅ 全部英文文案生效，切换按钮正常 |
+| 英文简介页 | https://jingjingblackpink.github.io/metal-bath-manual/intro_en.html | ✅ 全部英文文案生效，参数表数据一致 |
+| 英文说明书页 | https://jingjingblackpink.github.io/metal-bath-manual/manual_en.html | ✅ 全部英文文案生效，PDF 链接不变 |
+| 中文首页 | https://jingjingblackpink.github.io/metal-bath-manual/ | ✅ 左上角已显示「EN · English」按钮，其余内容无改动 |
+| style.css?v=20260921 | https://jingjingblackpink.github.io/metal-bath-manual/style.css | ✅ 含 .lang-switch 新样式 |
+
+> 注：GitHub Pages CDN 缓存最长 10 分钟（`Cache-Control: max-age=600`），推送后个别页面若短暂显示旧内容，刷新或等待几分钟即可。
